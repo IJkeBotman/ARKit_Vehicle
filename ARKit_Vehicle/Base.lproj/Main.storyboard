@@ -21,10 +21,24 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FS2-Y7-3qD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ch-f3-UNq">
+                                <rect key="frame" x="20" y="617" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KIc-pX-NdP"/>
+                                    <constraint firstAttribute="width" constant="50" id="dvy-AT-afH"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addCar:" destination="6KI-vL-dUM" eventType="touchUpInside" id="VZ1-b2-Zea"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lpV-W0-xM2" firstAttribute="bottom" secondItem="8ch-f3-UNq" secondAttribute="bottom" constant="20" id="4TW-da-CA3"/>
                             <constraint firstItem="FS2-Y7-3qD" firstAttribute="top" secondItem="eVO-V1-RLH" secondAttribute="top" id="BBR-uR-TlE"/>
+                            <constraint firstItem="8ch-f3-UNq" firstAttribute="leading" secondItem="lpV-W0-xM2" secondAttribute="leading" constant="20" id="E7Q-7U-g6n"/>
                             <constraint firstItem="FS2-Y7-3qD" firstAttribute="leading" secondItem="lpV-W0-xM2" secondAttribute="leading" id="X1p-K2-zAt"/>
                             <constraint firstItem="FS2-Y7-3qD" firstAttribute="trailing" secondItem="lpV-W0-xM2" secondAttribute="trailing" id="dVc-F4-0A7"/>
                             <constraint firstItem="FS2-Y7-3qD" firstAttribute="bottom" secondItem="lpV-W0-xM2" secondAttribute="bottom" id="yQ2-23-6mt"/>
